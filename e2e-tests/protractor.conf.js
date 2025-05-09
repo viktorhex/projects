@@ -17,6 +17,8 @@ exports.config = {
 
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
-  }
+  },
+
+  chromeDriver: '/usr/bin/chromedriver'
 
 };
