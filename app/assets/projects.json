@@ -1,11 +1,14 @@
 [
   {
-    "name": "Project X"
+    "name": "Project X",
+    "description": "This is description X"
   },
   {
-    "name": "Project Y"
+    "name": "Project Y",
+    "description": "This is description Y"
   },
   {
-    "name": "Project Z"
+    "name": "Project Z",
+    "description": "This is description Z"
   }
 ]

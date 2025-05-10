@@ -1,7 +1,12 @@
-<div class="container-fluid">
+<div class="container-fluid project-item-list">
   <div ng-repeat="project in $ctrl.projects" class="row">
-    <div class="col-12">
-      {{ project.name }}
+    <div class="project-item">
+      <div class="col-12">
+        {{ project.name }}
+      </div>
+      <div class="col-12">
+        {{ project.description }}
+      </div>
     </div>
   </div>
 </div>

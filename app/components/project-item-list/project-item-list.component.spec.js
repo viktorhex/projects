@@ -12,7 +12,16 @@ describe('projectItemList', function () {
     beforeEach(inject(function ($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('assets/projects.json')
-        .respond([{ name: 'AngularJS Demo' }, { name: 'Nextjs Demo' }]);
+        .respond([
+          {
+            name: 'AngularJS Demo',
+            description: "description of angularjs demo work"
+          },
+          {
+            name: 'Nextjs Demo',
+            description: "description of Nextjs demo work"
+          }
+        ]);
 
       ctrl = $componentController('projectItemList');
     }));
@@ -23,7 +32,16 @@ describe('projectItemList', function () {
       expect(ctrl.projects).toEqual([]);
 
       $httpBackend.flush();
-      expect(ctrl.projects).toEqual([{ name: 'AngularJS Demo' }, { name: 'Nextjs Demo' }]);
+      expect(ctrl.projects).toEqual([
+        {
+          name: 'AngularJS Demo',
+          description: "description of angularjs demo work"
+        },
+        {
+          name: 'Nextjs Demo',
+          description: "description of Nextjs demo work"
+        }
+      ]);
     });
 
   });
