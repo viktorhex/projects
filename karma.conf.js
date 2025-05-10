@@ -9,11 +9,10 @@ module.exports = function (config) {
       'lib/angular-resource/angular-resource.js',
       'lib/angular-route/angular-route.js',
       '../node_modules/angular-mocks/angular-mocks.js',
-      'core/core.module.js',
-      'core/project/project.module.js',
-      'core/**/*.js',
-      'components/project-item-list/project-item-list.module.js',
-      'components/**/*.js'
+      '**/*.module.js',
+      '*!(.module|.spec).js',
+      '!(lib)/**/*!(.module|.spec).js',
+      '**/*.spec.js'
     ],
 
     autoWatch: true,

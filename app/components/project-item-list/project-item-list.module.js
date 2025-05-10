@@ -1,4 +1,4 @@
 'use strict';
 
 // Define the `projectItemList` module
-angular.module('projectItemList', []);
+angular.module('projectItemList', ['core.project']);
