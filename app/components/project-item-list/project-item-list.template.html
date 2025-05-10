@@ -1,5 +1,7 @@
 <div class="container-fluid">
-  <div class="row">
-    TODO
+  <div ng-repeat="project in $ctrl.projects" class="row">
+    <div class="col-12">
+      {{ project.name }}
+    </div>
   </div>
 </div>

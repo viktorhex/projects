@@ -1,5 +1,5 @@
 //jshint strict: false
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     basePath: './app',
@@ -9,9 +9,10 @@ module.exports = function(config) {
       'lib/angular-resource/angular-resource.js',
       'lib/angular-route/angular-route.js',
       '../node_modules/angular-mocks/angular-mocks.js',
-      'core/**/*.module.js',
-      'components/**/*.module.js',
+      'core/core.module.js',
+      'core/project/project.module.js',
       'core/**/*.js',
+      'components/project-item-list/project-item-list.module.js',
       'components/**/*.js'
     ],
 
