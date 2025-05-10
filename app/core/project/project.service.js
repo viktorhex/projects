@@ -4,7 +4,7 @@ angular.
   module('core.project').
   factory('Project', ['$resource',
     function ($resource) {
-      return $resource('data/projects.json', {}, {
+      return $resource('assets/projects.json', {}, {
         query: {
           method: 'GET',
           isArray: true

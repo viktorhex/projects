@@ -11,7 +11,7 @@ describe('projectItemList', function () {
 
     beforeEach(inject(function ($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('data/projects.json')
+      $httpBackend.expectGET('assets/projects.json')
         .respond([{ name: 'AngularJS Demo' }, { name: 'Nextjs Demo' }]);
 
       ctrl = $componentController('projectItemList');

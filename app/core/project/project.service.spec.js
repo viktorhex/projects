@@ -20,7 +20,7 @@ describe('Project', function() {
   // Instantiate the service and "train" `$httpBackend` before each test
   beforeEach(inject(function(_$httpBackend_, _Project_) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('data/projects.json').respond(projectsData);
+    $httpBackend.expectGET('assets/projects.json').respond(projectsData);
 
     Project = _Project_;
   }));
@@ -31,7 +31,7 @@ describe('Project', function() {
     $httpBackend.verifyNoOutstandingRequest();
   });
 
-  it('should fetch the phones data from `/data/projects.json`', function() {
+  it('should fetch the phones data from `/assets/projects.json`', function() {
     var projects = Project.query();
 
     expect(projects).toEqual([]);
