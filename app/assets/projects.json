@@ -1,13 +1,16 @@
 [
   {
+    "id": "0",
     "name": "Project X",
     "description": "This is description X"
   },
   {
+    "id": "1",
     "name": "Project Y",
     "description": "This is description Y"
   },
   {
+    "id": "2",
     "name": "Project Z",
     "description": "This is description Z"
   }
