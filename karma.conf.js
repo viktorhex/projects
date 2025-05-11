@@ -12,8 +12,7 @@ module.exports = function (config) {
       '**/*.module.js',
       '*!(.module|.spec).js',
       '!(lib)/**/*!(.module|.spec).js',
-      '**/*.spec.js',
-      'components/**/*.html'
+      '**/*.spec.js'
     ],
 
     autoWatch: true,
