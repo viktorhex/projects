@@ -2,7 +2,10 @@
   <div ng-repeat="project in $ctrl.projects" class="row">
     <div class="row">
       <div class="col-auto">
-        <project-item data="project"></project-item>
+        <project-item
+          name="{{project.name}}"
+          description="{{project.description}}"
+        ></project-item>
       </div>
     </div>
   </div>
