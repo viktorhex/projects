@@ -3,7 +3,7 @@
 angular.
   module('projectItemDetails').
   component('projectItemDetails', {
-    template: 'Detail view: <div>{{$ctrl.project.name}}</div> <div>{{$ctrl.project.description}}</div>',
+    templateUrl: 'components/project-item-details/project-item-details.template.html',
     controller: ['$routeParams', 'Project',
       function ProjectItemDetailsController($routeParams, Project) {
         const projectId = $routeParams.projectId;
