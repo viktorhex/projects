@@ -7,7 +7,10 @@
   "license": "MIT",
   "dependencies": {
     "angular": "^1.8.3",
+    "angular-animate": "^1.8.3",
+    "angular-aria": "^1.8.3",
     "angular-loader": "^1.8.3",
+    "angular-material": "^1.2.5",
     "angular-resource": "^1.8.3",
     "angular-route": "^1.8.3",
     "html5-boilerplate": "0.0.1"

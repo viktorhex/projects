@@ -11,9 +11,18 @@ importers:
       angular:
         specifier: ^1.8.3
         version: 1.8.3
+      angular-animate:
+        specifier: ^1.8.3
+        version: 1.8.3
+      angular-aria:
+        specifier: ^1.8.3
+        version: 1.8.3
       angular-loader:
         specifier: ^1.8.3
         version: 1.8.3
+      angular-material:
+        specifier: ^1.2.5
+        version: 1.2.5(angular-animate@1.8.3)(angular-aria@1.8.3)(angular-messages@1.8.3)(angular@1.8.3)
       angular-resource:
         specifier: ^1.8.3
         version: 1.8.3
@@ -78,8 +87,28 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
+  angular-animate@1.8.3:
+    resolution: {integrity: sha512-/LtTKvy5sD6MZbV0v+nHgOIpnFF0mrUp+j5WIxVprVhcrJriYpuCZf4S7Owj1o76De/J0eRzANUozNJ6hVepnQ==}
+    deprecated: For the actively supported Angular, see https://www.npmjs.com/package/@angular/core. AngularJS support has officially ended. For extended AngularJS support options, see https://goo.gle/angularjs-path-forward.
+
+  angular-aria@1.8.3:
+    resolution: {integrity: sha512-qTXclmTW/KGw5JNKKQPcCKKq6hCBZ39jYINmLgMsjUHBAoxULaMRRTaRj/L2VTOjKvK5f9enkx+EUqRqzXDSFQ==}
+    deprecated: For the actively supported Angular, see https://www.npmjs.com/package/@angular/core. AngularJS support has officially ended. For extended AngularJS support options, see https://goo.gle/angularjs-path-forward.
+
   angular-loader@1.8.3:
     resolution: {integrity: sha512-7Jn0hg811k5QAijcXCVCszySXTtakaNEe11MfGiZP3/eBkmSTkUc9z+DiAJ+VVmDlu+SVSF81Ahj0iXjSBQfwQ==}
+
+  angular-material@1.2.5:
+    resolution: {integrity: sha512-bTTDV0vszpfms1tAMzhLntxBiNMCk/I3Mx/vhbtfhijJILODjpDBfWah0nvWrniFIcxMLcsb1tcPri13hZEaew==}
+    deprecated: For the actively supported Angular Material, see https://www.npmjs.com/package/@angular/material. AngularJS support has officially ended. For extended AngularJS support options, see https://goo.gle/angularjs-path-forward.
+    peerDependencies:
+      angular: ^1.7.2
+      angular-animate: ^1.7.2
+      angular-aria: ^1.7.2
+      angular-messages: ^1.7.2
+
+  angular-messages@1.8.3:
+    resolution: {integrity: sha512-f/ywtg32lqzX8FnXkBJOyn13lbCbo333/xy/5TTFcsH/gZdXoiuERj+dLTOs8xHCkOeFQhFx0VD0DgtMgSag7A==}
 
   angular-mocks@1.8.3:
     resolution: {integrity: sha512-vqsT6zwu80cZ8RY7qRQBZuy6Fq5X7/N5hkV9LzNT0c8b546rw4ErGK6muW1u2JnDKYa7+jJuaGM702bWir4HGw==}
@@ -1836,7 +1865,20 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
+  angular-animate@1.8.3: {}
+
+  angular-aria@1.8.3: {}
+
   angular-loader@1.8.3: {}
+
+  angular-material@1.2.5(angular-animate@1.8.3)(angular-aria@1.8.3)(angular-messages@1.8.3)(angular@1.8.3):
+    dependencies:
+      angular: 1.8.3
+      angular-animate: 1.8.3
+      angular-aria: 1.8.3
+      angular-messages: 1.8.3
+
+  angular-messages@1.8.3: {}
 
   angular-mocks@1.8.3: {}
 
