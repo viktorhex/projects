@@ -4,5 +4,6 @@
 angular.module('myApp', [
   'ngRoute',
   'core',
-  'projectItemList'
+  'projectItemList',
+  'projectItemDetails'
 ])

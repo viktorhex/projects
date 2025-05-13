@@ -5,9 +5,12 @@ angular.
   config(['$routeProvider',
     function config($routeProvider) {
       $routeProvider.
-        when('/home', {
+        when('/projects', {
           template: '<project-item-list></project-item-list>'
         })
-        .otherwise('/home');
+        .when('/projects/:projectId', {
+          template: '<project-item-details></project-item-details>'
+        })
+        .otherwise('/projects');
     }
   ]);
