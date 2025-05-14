@@ -1,7 +1,16 @@
-<h1>{{$ctrl.project.name}}</h1>
-<div>{{$ctrl.project.description}}</div>
-<br/>
-<h5>Tools used:</h5>
-<ul ng-repeat="tool in $ctrl.project.tools">
-  <li>{{tool}}</li>
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1>{{$ctrl.project.name}}</h1>
+      <div>{{$ctrl.project.description}}</div>
+      <br />
+      <h5>Tools used:</h5>
+      <ul ng-repeat="tool in $ctrl.project.tools">
+        <li>{{tool}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <img class="project-image" ng-src="{{$ctrl.project.image}}" />
+    </div>
+  </div>
+</div>

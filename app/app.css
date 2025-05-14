@@ -31,3 +31,7 @@
 .project-item {
   cursor: pointer;
 }
+
+.project-image {
+  border: solid 1px gray;
+}
