@@ -5,12 +5,16 @@
 describe('my app', function () {
 
   // todo: test case for navigating to details page
-  // todo: test case for filtering projects by input
   it('should automatically redirect to /home when location hash/fragment is empty', function () {
     browser.get('index.html');
     expect(browser.getLocationAbsUrl()).toMatch("/projects");
   });
 
+  it('should render details page', function(){
+    browser.get('index.html#!/projects/0');
+    expect(element.all(by.css('.project__tools')).first().getText()).
+      toMatch(/AngularJS/); // first tool used
+  });
 
   describe('projects', function () {
 
