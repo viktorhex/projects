@@ -1,8 +1,9 @@
 <div class="container-fluid project-item-list">
-  <div ng-repeat="project in $ctrl.projects" class="row">
+  <input ng-model="$ctrl.query" />
+  <div ng-repeat="project in $ctrl.projects | filter:$ctrl.query" class="row">
     <div class="row">
       <div class="col-auto">
-        <md-card md-theme-watch class="projec-item" ng-click="$ctrl.navigateToProject(project.id)">
+        <md-card md-theme-watch class="project-item" ng-click="$ctrl.navigateToProject(project.id)">
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">{{project.name}}</span>
