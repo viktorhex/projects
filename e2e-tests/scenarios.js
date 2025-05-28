@@ -22,7 +22,7 @@ describe('my app', function () {
       browser.get('index.html#!/projects');
     });
 
-    it('should render home when user navigates to /home', function () {
+    it('should render home when user navigates to /projects', function () {
       expect(element.all(by.css('.project-item')).first().getText()).
         toMatch(/Project Portfolio/);
     });
